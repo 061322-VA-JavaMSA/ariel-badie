@@ -15,10 +15,10 @@ public class AssignmentWed {
 		switch (opt) {
 			case 1: 
 				Random number = new Random();
-		        int rand = number.nextInt(1000);
-		        System.out.println(rand +"\n");
-		        menu();
-		        break;
+		        	int rand = number.nextInt(1000);
+		        	System.out.println(rand +"\n");
+		       	 	menu();
+		        	break;
 		     
 			case 2: 
 				System.out.println("Please enter a string you would like to reverse: ");
