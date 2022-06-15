@@ -1,15 +1,13 @@
-
 import java.util.Random;
 import java.util.Scanner;
 
 public class AssignmentWed {
 	static Scanner scan = new Scanner(System.in);
 	
-	
 	public static void menu() {
-		System.out.println("Welcome to Wendesday Menu Options!" + "\n" + 
+		System.out.println("Welcome to Wednesday's Menu Options!" + "\n" + 
 				"Please select an option:");
-		System.out.println("1 : Random Number" + "\n" + "2 : Reverse a string" + "\n"
+		System.out.println("1 : Random Number" + "\n" + "2 : Reverse a String" + "\n"
 				+ "3 : Exit Menu");
 		
 		int opt = scan.nextInt();
@@ -23,16 +21,17 @@ public class AssignmentWed {
 		        break;
 		     
 			case 2: 
-				System.out.println("Please enter a string you would like to reverse:");
+				System.out.println("Please enter a string you would like to reverse: ");
+				scan.nextLine();
 				String response = scan.nextLine();
 				StringBuffer resp = new StringBuffer(response);	
-				System.out.println(resp.reverse());
+				System.out.println(resp.reverse() + "\n");
+				menu();
 				break;
 				
 			case 3: 
 				System.out.println("Goodbye!");
 				break;
-
 		}
 		
 	}
@@ -42,3 +41,4 @@ public class AssignmentWed {
 	}
 
 }
+
