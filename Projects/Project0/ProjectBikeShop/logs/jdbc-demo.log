@@ -1,0 +1,92 @@
+08:30:48 [main] ERROR com.revature.Driver - Login exception was thrown: com.revature.exceptions.LoginException
+08:36:53 [main] ERROR com.revature.Driver - Login exception was thrown: com.revature.exceptions.LoginException
+08:37:04 [main] INFO  com.revature.services.UserService - User: User [id=0, username=are, password=lynn] was created.
+08:37:04 [main] INFO  com.revature.Driver - User [id=0, username=are, password=lynn]
+08:38:15 [main] ERROR com.revature.Driver - Login exception was thrown: com.revature.exceptions.LoginException
+10:54:27 [main] ERROR com.revature.Driver - Login exception was thrown: com.revature.exceptions.LoginException
+12:00:55 [main] INFO  com.revature.Driver - User [id=1, username=hcocking0, password=Gox1eyM1ph]
+12:01:15 [main] INFO  com.revature.services.UserService - User: User [id=11, username=myname, password=fly] was created.
+12:01:15 [main] INFO  com.revature.Driver - User [id=11, username=myname, password=fly]
+12:03:59 [main] INFO  com.revature.Driver - User [id=11, username=myname, password=fly]
+12:04:12 [main] INFO  com.revature.services.UserService - User: User [id=12, username=tryagain, password=now] was created.
+12:04:12 [main] INFO  com.revature.Driver - User [id=12, username=tryagain, password=now]
+12:24:46 [main] ERROR com.revature.Driver - Login exception was thrown: com.revature.exceptions.LoginException
+19:20:45 [main] ERROR com.revature.Driver - Login exception was thrown: com.revature.exceptions.LoginException
+19:22:43 [main] ERROR com.revature.Driver - Login exception was thrown: com.revature.exceptions.LoginException
+19:29:59 [main] ERROR com.revature.Driver - Login exception was thrown: com.revature.exceptions.LoginException
+19:32:45 [main] ERROR com.revature.Driver - Login exception was thrown: com.revature.exceptions.LoginException
+19:34:30 [main] ERROR com.revature.Driver - Login exception was thrown: com.revature.exceptions.LoginException
+19:34:55 [main] ERROR com.revature.Driver - Login exception was thrown: com.revature.exceptions.LoginException
+19:38:47 [main] INFO  com.revature.services.UserService - User: User [id=0, username=jake, password=starfarm] was created.
+19:38:47 [main] INFO  com.revature.Driver - User [id=0, username=jake, password=starfarm]
+20:11:07 [main] ERROR com.revature.Driver - Login exception was thrown: com.revature.exceptions.LoginException
+10:06:25 [main] ERROR com.revature.Driver - Login exception was thrown: com.revature.exceptions.LoginException
+10:15:35 [main] INFO  com.revature.Driver - User [id=2, username=jtoovey1, password=5hE57W]
+10:16:49 [main] INFO  com.revature.services.CustomerService - Customer: User [id=0, username=menow, password=lost] was created.
+10:16:49 [main] INFO  com.revature.Driver - User [id=0, username=menow, password=lost]
+10:17:37 [main] INFO  com.revature.Driver - User [id=2, username=jtoovey1, password=5hE57W]
+10:17:44 [main] INFO  com.revature.services.CustomerService - Customer: User [id=0, username=menow, password=lost] was created.
+10:17:44 [main] INFO  com.revature.Driver - User [id=0, username=menow, password=lost]
+10:20:57 [main] INFO  com.revature.Driver - User [id=2, username=jtoovey1, password=5hE57W]
+10:21:07 [main] INFO  com.revature.services.CustomerService - Customer: User [id=0, username=try, password=again] was created.
+10:21:07 [main] INFO  com.revature.Driver - User [id=0, username=try, password=again]
+10:24:25 [main] INFO  com.revature.Driver - User [id=2, username=jtoovey1, password=5hE57W]
+10:24:37 [main] INFO  com.revature.services.CustomerService - Customer: User [id=11, username=trying, password=this] was created.
+10:24:37 [main] INFO  com.revature.Driver - User [id=11, username=trying, password=this]
+11:08:54 [main] ERROR com.revature.Driver - Login exception was thrown: com.revature.exceptions.LoginException
+11:11:02 [main] INFO  com.revature.Driver - User [id=2, username=jtoovey1, password=5hE57W]
+11:11:09 [main] INFO  com.revature.services.CustomerService - Customer: User [id=11, username=hello, password=world] was created.
+11:11:09 [main] INFO  com.revature.Driver - User [id=11, username=hello, password=world]
+11:57:01 [main] INFO  com.revature.Driver - User [id=6, username=mrehn5, password=XpvygMKQ]
+11:57:38 [main] INFO  com.revature.services.CustomerService - Customer: User [id=12, username=ariel, password=topgun] was created.
+11:57:38 [main] INFO  com.revature.Driver - User [id=12, username=ariel, password=topgun]
+12:14:04 [main] INFO  com.revature.Driver - User [id=12, username=ariel, password=topgun]
+12:14:14 [main] INFO  com.revature.services.CustomerService - Customer: User [id=13, username=check, password=one] was created.
+12:14:14 [main] INFO  com.revature.Driver - User [id=13, username=check, password=one]
+12:30:44 [main] INFO  com.revature.Driver - User [id=5, username=ariel, password=topgun]
+12:30:56 [main] INFO  com.revature.services.UserService - User: User [id=13, username=list, password=lol] was created.
+12:30:56 [main] INFO  com.revature.Driver - User [id=13, username=list, password=lol]
+12:47:55 [main] INFO  com.revature.services.UserService - User: User [id=0, username=, password=confused] was created.
+12:47:55 [main] INFO  com.revature.Driver - User [id=0, username=, password=confused]
+12:52:06 [main] INFO  com.revature.services.UserService - User: User [id=0, username=, password=john] was created.
+12:52:06 [main] INFO  com.revature.Driver - User [id=0, username=, password=john]
+12:52:54 [main] ERROR com.revature.Driver - Login exception was thrown: com.revature.exceptions.LoginException
+12:53:46 [main] ERROR com.revature.Driver - Login exception was thrown: com.revature.exceptions.LoginException
+12:59:17 [main] ERROR com.revature.Driver - Login exception was thrown: com.revature.exceptions.LoginException
+13:03:06 [main] INFO  com.revature.Driver - User [id=5, username=ariel, password=topgun]
+14:07:33 [main] INFO  com.revature.Driver - User [id=5, username=ariel, password=topgun]
+14:12:18 [main] INFO  com.revature.services.UserService - User: User [id=16, username=gary, password=vee] was created.
+14:12:18 [main] INFO  com.revature.Driver - User [id=16, username=gary, password=vee]
+14:35:17 [main] INFO  com.revature.Driver - User [id=5, username=ariel, password=topgun]
+14:49:55 [main] INFO  com.revature.Driver - User [id=5, username=ariel, password=topgun]
+15:14:34 [main] INFO  com.revature.Driver - User [id=5, username=ariel, password=topgun]
+15:15:58 [main] INFO  com.revature.Driver - User [id=5, username=ariel, password=topgun]
+15:22:57 [main] INFO  com.revature.Driver - User [id=5, username=ariel, password=topgun]
+15:26:26 [main] INFO  com.revature.Driver - User [id=5, username=ariel, password=topgun]
+15:28:05 [main] INFO  com.revature.services.UserService - User: User [id=17, username=happy, password=days] was created.
+15:28:05 [main] INFO  com.revature.Driver - User [id=17, username=happy, password=days]
+16:15:21 [main] INFO  com.revature.services.UserService - User: User [id=18, username=jake, password=statefarm] was created.
+16:15:21 [main] INFO  com.revature.Driver - User [id=18, username=jake, password=statefarm]
+16:18:19 [main] INFO  com.revature.services.UserService - User: User [id=19, username=help, password=me] was created.
+16:18:19 [main] INFO  com.revature.Driver - User [id=19, username=help, password=me]
+16:27:27 [main] INFO  com.revature.services.UserService - User: User [id=20, username=hey, password=there] was created.
+16:27:27 [main] INFO  com.revature.Driver - User [id=20, username=hey, password=there]
+16:32:34 [main] INFO  com.revature.services.UserService - User: User [id=21, username=rew, password=wer] was created.
+16:32:34 [main] INFO  com.revature.Driver - User [id=21, username=rew, password=wer]
+16:32:59 [main] INFO  com.revature.Driver - true
+16:54:18 [main] INFO  com.revature.Driver - User [id=5, username=ariel, password=topgun]
+19:32:03 [main] INFO  com.revature.services.UserService - User: User [id=22, username=just, password=joshin] was created.
+19:32:03 [main] INFO  com.revature.Driver - User [id=22, username=just, password=joshin]
+19:32:27 [main] INFO  com.revature.Driver - User [id=22, username=just, password=joshin]
+19:36:06 [main] INFO  com.revature.services.UserService - User: User [id=23, username=set, password=go] was created.
+19:36:06 [main] INFO  com.revature.Driver - User [id=23, username=set, password=go]
+20:44:30 [main] INFO  com.revature.services.UserService - Item: Task [id=0, name=wrench, description=some tool , offer=4, status=1, AddedBy=User [id=4, username=mrehn5, password=XpvygMKQ]Owned By=null] was created.
+20:44:30 [main] INFO  com.revature.Driver - Task [id=0, name=wrench, description=some tool , offer=4, status=1, AddedBy=User [id=4, username=mrehn5, password=XpvygMKQ]Owned By=null]
+20:52:06 [main] INFO  com.revature.services.UserService - Item: Task [id=0, name=wrench, description=some tool, offer=6, status=1, AddedBy=4Owned By=0] was created.
+20:52:06 [main] INFO  com.revature.Driver - Task [id=0, name=wrench, description=some tool, offer=6, status=1, AddedBy=4Owned By=0]
+21:14:23 [main] INFO  com.revature.services.UserService - Item: Task [id=4, name=wrench, description=some tool, offer=4, status=1] was created.
+21:14:23 [main] INFO  com.revature.Driver - Task [id=4, name=wrench, description=some tool, offer=4, status=1]
+21:28:47 [main] INFO  com.revature.services.UserService - Item: Task [id=5, name=hammer, description=hits things off the bike, offer=3, status=1] was created.
+21:28:47 [main] INFO  com.revature.Driver - Task [id=5, name=hammer, description=hits things off the bike, offer=3, status=1]
+21:40:30 [main] INFO  com.revature.Driver - true
+21:41:14 [main] INFO  com.revature.Driver - true
