@@ -7,6 +7,7 @@ import com.revature.models.User;
 public interface UserDAO {
 	User createUser(User u);
 	User retrieveUserById(int id);
+	int retrieveClearanceByUsername(String username);
 	List<User> retrieveUsers();
 	User retrieveUserByUsername(String username);
 	boolean updateUser(User u);

@@ -162,4 +162,30 @@ public class UserPostgres implements UserDAO{
 		return true;
 	}
 
+	public int retrieveClearanceByUsername(String username) {
+		String sql = "select clearance from users where username  = ?;";
+		User u = null;
+		int clearance = 0;
+		
+		try (Connection c = ConnectionUtil.getHardcodedConnection();){
+			PreparedStatement ps = c.prepareStatement(sql);
+			
+			ps.setString(1, username); // this refers to the 1st "?" in the sql string, allows to inject data
+
+			ResultSet rs = ps.executeQuery();
+			
+			while(rs.next()) {
+				u = new User();
+				u.setClearance(rs.getInt("clearance"));
+				clearance = u.getClearance();
+			}
+			
+		} catch (SQLException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
+		
+		return clearance;
+	}
+
 }

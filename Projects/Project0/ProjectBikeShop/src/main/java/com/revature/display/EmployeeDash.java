@@ -9,6 +9,8 @@ import org.apache.logging.log4j.Logger;
 import com.revature.Driver;
 import com.revature.daos.ItemDAO;
 import com.revature.daos.ItemPostgres;
+import com.revature.daos.OfferDAO;
+import com.revature.daos.OfferPostgres;
 import com.revature.daos.UserDAO;
 import com.revature.daos.UserPostgres;
 import com.revature.services.AuthService;
@@ -22,9 +24,11 @@ import org.apache.logging.log4j.Logger;
 import com.revature.Driver;
 import com.revature.models.User;
 import com.revature.models.Item;
+import com.revature.models.Offer;
 import com.revature.services.AuthService;
 import com.revature.services.UserService;
 import com.revature.services.ItemService;
+import com.revature.services.OfferService;
 //import com.revature.services.
 
 public class EmployeeDash {
@@ -32,6 +36,7 @@ public class EmployeeDash {
 		static AuthService as;
 		static UserService us;
 		static ItemService is;
+		static OfferService os;
 		private static Logger log = LogManager.getLogger(Driver.class);
 	
 		
@@ -66,19 +71,59 @@ public class EmployeeDash {
 			itemTBC.setItemDesc(itemDesc);
 			itemTBC.setItemOffer(itemOffer);
 			itemTBC.setStatus(1);
+			itemTBC.setOwnedBy(1);
 			log.info(is.createItem(itemTBC));
 		
 	}
 	
+		public static void reviewOffers() {
+			
+			scan = new Scanner(System.in);
+			as = new AuthService();
+			us = new UserService();
+			is = new ItemService();
+			os = new OfferService();
+			int opt;
+			int emID;
+			int itemID;
+			int offerID;
+			int decide;
+			
+			OfferDAO odao = new OfferPostgres();
+			
+			System.out.println("Review Offers");
+			List<Offer> offer= os.getOffer();
+			for(Offer o : offer) {
+			System.out.println(o);
+			}	
+			System.out.println("Please enter the Offer's ID you would like to decide: ");
+			System.out.print(".:");
+			offerID = scan.nextInt();
+			//log.info(odao.acceptOffer(offerID));
+			System.out.println("Please enter your decision \n 1: Reject \n 2: Accept ");
+			System.out.print(".:");
+			decide = scan.nextInt();
+			if (decide == 1 ) {
+				odao.rejectOffer(offerID);
+			}else if (decide == 2) {
+				odao.acceptOffer(offerID);
+			}else {
+				System.out.println("Unrecognized input, try again");
+				reviewOffers();
+			}
+		}
+		
 	public static void empView() {
 		
 		scan = new Scanner(System.in);
 		as = new AuthService();
 		us = new UserService();
 		is = new ItemService();
+		os = new OfferService();
 		int opt;
 		int emID;
 		int itemID;
+		int offerID;
 	//	User use = new User();
 		UserDAO udao = new UserPostgres();
 		ItemDAO idao = new ItemPostgres();
@@ -88,8 +133,7 @@ public class EmployeeDash {
 		System.out.println("1: Add Items");
 		System.out.println("2: Delete Items");
 		System.out.println("3: Review Offers");
-		System.out.println("4: View Item Payments");
-		System.out.println("5: Logout");
+		System.out.println("4: Logout");
 		System.out.print(".:");
 		opt = scan.nextInt();
 		if (opt == 1) {
@@ -106,10 +150,9 @@ public class EmployeeDash {
 			log.info(idao.deleteItemById(itemID));
 			empView();
 		}else if (opt == 3) {
-			System.out.println("Review Offers");
+			reviewOffers();
+			empView();
 		}else if (opt == 4) {
-			System.out.println("View Payments");
-		}else if (opt == 5) {
 			System.out.println("Goodbye");
 			LoginScreen.welcome();
 		}

@@ -9,8 +9,10 @@ import org.apache.logging.log4j.Logger;
 import com.revature.Driver;
 import com.revature.daos.UserDAO;
 import com.revature.daos.UserPostgres;
+import com.revature.models.Item;
 import com.revature.models.User;
 import com.revature.services.AuthService;
+import com.revature.services.ItemService;
 import com.revature.services.UserService;
 
 public class ManagerDash {
@@ -18,6 +20,7 @@ public class ManagerDash {
 	static Scanner scan;
 	static AuthService as;
 	static UserService us;
+	static ItemService is;
 	private static Logger log = LogManager.getLogger(Driver.class);
 	
 	
@@ -26,6 +29,7 @@ public class ManagerDash {
 		scan = new Scanner(System.in);
 		as = new AuthService();
 		us = new UserService();
+		is = new ItemService();
 		int opt;
 		int emID;
 	//	User use = new User();
@@ -35,7 +39,7 @@ public class ManagerDash {
 		System.out.println("Select what you would like to do:");
 		System.out.println("1: Register Employees");
 		System.out.println("2: Fire Employees");
-		System.out.println("3: View all activity");
+		System.out.println("3: View Store Inventory Activity");
 		System.out.println("4: Logout");
 		System.out.print(".:");
 		opt = scan.nextInt();
@@ -54,7 +58,11 @@ public class ManagerDash {
 				log.info(udao.deleteUserById(emID));
 			managView();
 		}else if (opt == 3) {
-			System.out.println("Working on it");
+			List<Item> item= is.getItem();
+			for(Item i : item) {
+			System.out.println(i);
+			}
+			managView();
 		}else if (opt == 4) {
 			System.out.println("Goodbye");
 			LoginScreen.welcome();

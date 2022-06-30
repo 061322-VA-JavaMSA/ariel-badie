@@ -8,7 +8,7 @@ public interface ItemDAO {
 	Item createItem(Item i);
 	List<Item> retrieveItem();
 	Item retrieveItemById(int id);
-	List<Item> retrieveItemByUserId(int id);
+	List<Item> retrieveItemByOwnedId(int ownedBy);
 	boolean updateItem(Item t);
 	boolean deleteItemById(int id);
 }

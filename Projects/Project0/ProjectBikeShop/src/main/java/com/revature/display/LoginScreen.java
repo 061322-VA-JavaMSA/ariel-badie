@@ -6,9 +6,12 @@ import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 
 import com.revature.Driver;
+import com.revature.daos.UserDAO;
+import com.revature.daos.UserPostgres;
 //import com.revature.daos.UserDAO;
 //import com.revature.daos.UserPostgres;
 import com.revature.exceptions.LoginException;
+import com.revature.models.User;
 //import com.revature.models.User;
 import com.revature.services.AuthService;
 import com.revature.services.UserService;
@@ -59,8 +62,8 @@ public class LoginScreen {
 		as = new AuthService();
 		us = new UserService();
 		
-	//	User use = new User();
-	//	UserDAO udao = new UserPostgres();
+		User use = new User();
+		UserDAO udao = new UserPostgres();
 		String username = null;
 		String password = null;
 		
@@ -72,6 +75,19 @@ public class LoginScreen {
 		
 		try {
 			log.info(as.login(username, password));
+		 
+			if (as.login(username, password).getClass() == use.getClass()) {
+				if( udao.retrieveClearanceByUsername(username)== 3) {
+					CustomerDash.custView();
+				}else if (udao.retrieveClearanceByUsername(username) == 2){
+					EmployeeDash.empView();
+					
+				}else if (udao.retrieveClearanceByUsername(username) == 1) {
+					ManagerDash.managView();
+				}else
+					System.out.println("Restriticted");
+				
+			}else
 				System.out.println("Here.");
 		} catch (LoginException e) {
 			System.out.println("Invalid credentials.");

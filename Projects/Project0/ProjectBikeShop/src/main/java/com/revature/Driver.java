@@ -18,17 +18,6 @@ public class Driver {
 	static Scanner scan;
 	static AuthService as;
 	static UserService us;
-	//private static Logger log = LogManager.getLogger(Driver.class);
-	
-	//static String username = null;
-	//static String password = null;
-	/**public static void customerdash() {
-		System.out.println("Hello Customer, Welcome to ShopName");
-		System.out.println("Please select option:" +"\n"+"1: Shop" +"2: View Purchases" + "\n" + "3: Logout");
-		
-	}**/
-	
-
 	
 	public static void main(String[] args) {
 		scan = new Scanner(System.in);
@@ -43,6 +32,7 @@ public class Driver {
 			//LoginScreen.welcome();
 			EmployeeDash.empView();
 			//ManagerDash.managView();
+			//	CustomerDash.custView();
 			
 		
 		//System.out.println("Retrieve tasks for which user id?");

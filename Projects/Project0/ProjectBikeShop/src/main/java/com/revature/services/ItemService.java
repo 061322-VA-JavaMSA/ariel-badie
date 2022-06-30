@@ -17,7 +17,9 @@ public class ItemService {
 	public List<Item> getItem(){
 		return itdao.retrieveItem();
 	}
-	
+	public List<Item> getItemOwned(int ownedBy) {
+		return itdao.retrieveItemByOwnedId(ownedBy);
+	}
 	public Item createItem(Item i) {
 		Item item = itdao.createItem(i);
 		log.info("Item: " + item + " was created.");

@@ -90,3 +90,14 @@
 21:28:47 [main] INFO  com.revature.Driver - Task [id=5, name=hammer, description=hits things off the bike, offer=3, status=1]
 21:40:30 [main] INFO  com.revature.Driver - true
 21:41:14 [main] INFO  com.revature.Driver - true
+04:19:41 [main] INFO  com.revature.services.UserService - User: User [id=24, username=first, password=here] was created.
+04:19:41 [main] INFO  com.revature.Driver - User [id=24, username=first, password=here]
+04:19:53 [main] INFO  com.revature.Driver - User [id=24, username=first, password=here]
+04:27:52 [main] INFO  com.revature.Driver - User [id=24, username=first, password=here]
+04:42:23 [main] INFO  com.revature.Driver - User [id=24, username=first, password=here]
+04:44:34 [main] INFO  com.revature.Driver - User [id=24, username=first, password=here]
+04:48:08 [main] INFO  com.revature.Driver - User [id=5, username=ariel, password=topgun]
+04:48:58 [main] INFO  com.revature.Driver - User [id=7, username=hello, password=world]
+04:54:08 [main] INFO  com.revature.Driver - User [id=5, username=ariel, password=topgun]
+08:41:49 [main] INFO  com.revature.services.UserService - Offer:Offer [id=4, byCustomerID=3, forItemID=2, offer=20.0, status= 0] was created.
+08:41:49 [main] INFO  com.revature.Driver - Offer [id=4, byCustomerID=3, forItemID=2, offer=20.0, status= 0]

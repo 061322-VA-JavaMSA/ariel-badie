@@ -10,6 +10,7 @@ public class Item {
 	private String itemDesc;
 	private int itemOffer;
 	private int status;
+	private int ownedBy;
 
 	
 	public Item() {
@@ -47,6 +48,13 @@ public class Item {
 	public void setStatus(int status) {
 		this.status = status;
 	}
+	public int getOwnedBy() {
+		return ownedBy;
+	}
+	public void setOwnedBy(int ownedBy) {
+		this.ownedBy = ownedBy;
+	}
+	
 	@Override
 	public int hashCode() {
 		return Objects.hash(itemName, itemDesc, id, status, itemOffer);
@@ -66,8 +74,7 @@ public class Item {
 	}
 	@Override
 	public String toString() {
-		return "Task [id=" + id + ", name=" + itemName + ", description=" + itemDesc + ", offer=" + itemOffer + ", status=" + status
-				+ "]";
+		return "Item [id=" + id + ", name=" + itemName + ", description=" + itemDesc + ", Minoffer=" + itemOffer + ", status= " + status + "]";
 	}
-
+	
 }
