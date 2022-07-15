@@ -13,6 +13,8 @@ public interface ReimbursmentDAO {
 	List<Reimbursment> getReimbursments();
 	List<Reimbursment>  getByAuthor(User u);
 	List<Reimbursment>  getByStatus(ReimbursmentStatus rs);
-	List<Reimbursment>  getByType(ReimbursmentType rt);
+	Reimbursment getReimbursmentById(int id);
+	Reimbursment getReimbursementByStatus(String status);
+	boolean updateStatusByID(int id, User user, Reimbursment rs);
 
 }
